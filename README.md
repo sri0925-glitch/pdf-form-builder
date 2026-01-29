@@ -31,3 +31,9 @@ This keeps layout changes declarative and repeatable.
 ---
 
 ## Project Structure
+
+pdf-form-builder/
+├── add-fields.mjs      # Node script that applies fields to the PDF
+├── fields.json         # JSON mapping of field coordinates and metadata
+├── package.json        # Runtime configuration and dependencies
+├── README.md
