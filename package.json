@@ -1,0 +1,12 @@
+{
+  "name": "pdf-form-builder",
+  "version": "1.0.0",
+  "description": "Programmatically adds fillable AcroForm fields to a PDF using JSON coordinate mapping",
+  "type": "module",
+  "scripts": {
+    "build": "node add-fields.mjs"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}`TGMAIL`

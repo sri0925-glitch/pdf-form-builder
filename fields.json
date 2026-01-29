@@ -1,0 +1,20 @@
+[
+  {
+    "page": 1,
+    "name": "employee_name",
+    "type": "text",
+    "x": 72,
+    "y": 650,
+    "w": 200,
+    "h": 18
+  },
+  {
+    "page": 1,
+    "name": "agree_terms",
+    "type": "checkbox",
+    "x": 72,
+    "y": 600,
+    "w": 14,
+    "h": 14
+  }
+]
