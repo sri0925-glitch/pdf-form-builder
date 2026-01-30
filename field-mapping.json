@@ -1,0 +1,23 @@
+{
+  "part3c_daily_duties": ["Part3c", "PART_III_c", "DailyDuties", "daily_duties"],
+  "part3d_special_emphasis": ["Part3d", "PART_III_d", "SpecialEmphasis", "special_emphasis"],
+  "part3e_appointed_duties": ["Part3e", "PART_III_e", "AppointedDuties", "appointed_duties"],
+
+  "part4_pt_comments": ["Part4PT", "PART_IV_PT", "PTComments", "pt_comments", "APFT_Comments"],
+  "part4c_comments": ["Part4c", "PART_IV_c", "CharacterComments", "character_comments"],
+  "part4d_comments": ["Part4d", "PART_IV_d", "PresenceComments", "presence_comments"],
+  "part4e_comments": ["Part4e", "PART_IV_e", "IntellectComments", "intellect_comments"],
+  "part4f_comments": ["Part4f", "PART_IV_f", "LeadsComments", "leads_comments"],
+  "part4g_comments": ["Part4g", "PART_IV_g", "DevelopsComments", "develops_comments"],
+  "part4h_comments": ["Part4h", "PART_IV_h", "AchievesComments", "achieves_comments"],
+  "part4j_comments": ["Part4j", "PART_IV_j", "OverallComments", "overall_comments"],
+
+  "part5a_potential": ["Part5a", "PART_V_a", "RaterAssessment", "rater_assessment"],
+  "part5b_potential": ["Part5b", "PART_V_b", "SeniorRaterPotential", "sr_potential"],
+  "part5c_potential": ["Part5c", "PART_V_c", "SeniorRaterComments", "sr_comments"],
+
+  "rated_name": ["RatedName", "rated_name", "Name", "RATED_NCO_NAME"],
+  "rated_rank": ["RatedRank", "rated_rank", "Rank", "RATED_NCO_RANK"],
+  "position": ["Position", "position", "DutyPosition", "DUTY_POSITION"],
+  "unit": ["Unit", "unit", "Organization", "ORGANIZATION"]
+}

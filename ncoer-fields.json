@@ -1,0 +1,226 @@
+[
+  {
+    "page": 1,
+    "name": "part3c_daily_duties",
+    "type": "text",
+    "x": 36,
+    "y": 500,
+    "w": 540,
+    "h": 72,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part3_daily_duties",
+      "maxTokens": 400
+    }
+  },
+  {
+    "page": 1,
+    "name": "part3d_special_emphasis",
+    "type": "text",
+    "x": 36,
+    "y": 420,
+    "w": 540,
+    "h": 48,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part3_special_emphasis",
+      "maxTokens": 300
+    }
+  },
+  {
+    "page": 1,
+    "name": "part3e_appointed_duties",
+    "type": "text",
+    "x": 36,
+    "y": 360,
+    "w": 540,
+    "h": 48,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part3_appointed_duties",
+      "maxTokens": 250
+    }
+  },
+  {
+    "page": 2,
+    "name": "part4_pt_comments",
+    "type": "text",
+    "x": 36,
+    "y": 700,
+    "w": 540,
+    "h": 36,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part4_pt",
+      "maxTokens": 200
+    }
+  },
+  {
+    "page": 2,
+    "name": "part4c_comments",
+    "type": "text",
+    "x": 36,
+    "y": 650,
+    "w": 540,
+    "h": 36,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part4_character",
+      "maxTokens": 200
+    }
+  },
+  {
+    "page": 2,
+    "name": "part4d_comments",
+    "type": "text",
+    "x": 36,
+    "y": 600,
+    "w": 540,
+    "h": 36,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part4_presence",
+      "maxTokens": 200
+    }
+  },
+  {
+    "page": 2,
+    "name": "part4e_comments",
+    "type": "text",
+    "x": 36,
+    "y": 550,
+    "w": 540,
+    "h": 36,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part4_intellect",
+      "maxTokens": 200
+    }
+  },
+  {
+    "page": 2,
+    "name": "part4f_comments",
+    "type": "text",
+    "x": 36,
+    "y": 500,
+    "w": 540,
+    "h": 36,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part4_leads",
+      "maxTokens": 200
+    }
+  },
+  {
+    "page": 2,
+    "name": "part4g_comments",
+    "type": "text",
+    "x": 36,
+    "y": 450,
+    "w": 540,
+    "h": 36,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part4_develops",
+      "maxTokens": 200
+    }
+  },
+  {
+    "page": 2,
+    "name": "part4h_comments",
+    "type": "text",
+    "x": 36,
+    "y": 400,
+    "w": 540,
+    "h": 36,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part4_achieves",
+      "maxTokens": 200
+    }
+  },
+  {
+    "page": 2,
+    "name": "part4j_comments",
+    "type": "text",
+    "x": 36,
+    "y": 350,
+    "w": 540,
+    "h": 48,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part4_overall",
+      "maxTokens": 300
+    }
+  },
+  {
+    "page": 3,
+    "name": "part5a_potential",
+    "type": "text",
+    "x": 36,
+    "y": 650,
+    "w": 540,
+    "h": 48,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part5_rater",
+      "maxTokens": 250
+    }
+  },
+  {
+    "page": 3,
+    "name": "part5b_potential",
+    "type": "text",
+    "x": 36,
+    "y": 580,
+    "w": 540,
+    "h": 48,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part5_sr_potential",
+      "maxTokens": 250
+    }
+  },
+  {
+    "page": 3,
+    "name": "part5c_potential",
+    "type": "text",
+    "x": 36,
+    "y": 510,
+    "w": 540,
+    "h": 60,
+    "multiline": true,
+    "fontSize": 9,
+    "llm": {
+      "generate": true,
+      "promptKey": "part5_sr_comments",
+      "maxTokens": 300
+    }
+  }
+]
