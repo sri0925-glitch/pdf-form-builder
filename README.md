@@ -1,39 +1,49 @@
 # PDF Form Builder (JSON → AcroForm)
 
-This project programmatically adds fillable AcroForm fields to an existing PDF
-using a JSON-based coordinate mapping.
+Programmatically adds fillable AcroForm fields to an existing PDF using a JSON coordinate map.
 
-The goal is to separate **layout definition** from **execution logic**, allowing
-PDF forms to be generated, updated, or versioned without manual editing.
+## Why
 
----
+Manually creating/adjusting fillable fields in Adobe Acrobat is slow and hard to reproduce. This repo makes form layouts declarative and versionable.
 
-## Problem
+## Quick start
 
-Manually creating or adjusting fillable PDF forms in Adobe Acrobat is:
-- Time-consuming
-- Error-prone
-- Difficult to reproduce across versions
+1) Install dependencies:
 
-This tool automates that process by defining all field placement in JSON and
-applying it programmatically.
+   `npm install`
 
----
+2) Inspect PDF page sizes (useful for coordinate work):
 
-## Approach
+   `npm run inspect -- --input input.pdf`
 
-1. Measure field coordinates in Adobe Acrobat
-2. Store field metadata (page, type, position, size) in `fields.json`
-3. Run a Node.js script to inject AcroForm fields into the PDF
+3) Build a fillable PDF (with debug boxes for alignment):
 
-This keeps layout changes declarative and repeatable.
+   `npm run build -- --input input.pdf --fields fields.json --output output_fillable.pdf --debug`
 
----
+## Coordinates
 
-## Project Structure
+- Units are **PDF points** (72 points = 1 inch)
+- **X** is always from the **left**
+- **Y** depends on how you measured it:
+  - If you measured from the **bottom** (PDF native / pdf-lib), use the default: `--coords bottom-left`
+  - If you measured from the **top** (common in UI tools), use: `--coords top-left`
 
-pdf-form-builder/
-├── add-fields.mjs      # Node script that applies fields to the PDF
-├── fields.json         # JSON mapping of field coordinates and metadata
-├── package.json        # Runtime configuration and dependencies
-├── README.md
+## `fields.json` format
+
+`fields.json` is a JSON array of field objects.
+
+Required keys:
+- `page` (1-based)
+- `name` (unique field name)
+- `type` (`text` or `checkbox`)
+- `x`, `y`, `w`, `h` (numbers; points)
+
+Optional keys:
+- `origin` (`bottom-left` or `top-left`) per-field override
+- `tooltip`, `value`, `fontSize`, `multiline`, `maxLength`, `required`, `readOnly`, `checked`
+
+## Project files
+
+- `add-fields.mjs` — CLI that injects fields into a PDF
+- `fields.json` — your field map
+- `fields.schema.json` — optional schema for VS Code JSON validation/completions

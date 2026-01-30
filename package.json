@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Programmatically adds fillable AcroForm fields to a PDF using JSON coordinate mapping",
   "type": "module",
+  "bin": {
+    "pdf-form-builder": "./add-fields.mjs"
+  },
   "scripts": {
-    "build": "node add-fields.mjs"
+    "inspect": "node add-fields.mjs inspect",
+    "build": "node add-fields.mjs build"
   },
   "dependencies": {
     "pdf-lib": "^1.17.1"

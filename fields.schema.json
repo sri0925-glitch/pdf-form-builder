@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PDF Form Builder Field Map",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["page", "name", "type", "x", "y", "w", "h"],
+    "properties": {
+      "page": { "type": "integer", "minimum": 1 },
+      "name": { "type": "string", "minLength": 1 },
+      "type": { "type": "string", "enum": ["text", "checkbox"] },
+      "x": { "type": "number" },
+      "y": { "type": "number" },
+      "w": { "type": "number", "exclusiveMinimum": 0 },
+      "h": { "type": "number", "exclusiveMinimum": 0 },
+      "origin": { "type": "string", "enum": ["bottom-left", "top-left"] },
+      "tooltip": { "type": "string" },
+      "value": { "type": "string" },
+      "fontSize": { "type": "number", "exclusiveMinimum": 0 },
+      "maxLength": { "type": "integer", "minimum": 1 },
+      "multiline": { "type": "boolean" },
+      "required": { "type": "boolean" },
+      "readOnly": { "type": "boolean" },
+      "checked": { "type": "boolean" }
+    }
+  }
+}
