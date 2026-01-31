@@ -22,7 +22,24 @@
       "multiline": { "type": "boolean" },
       "required": { "type": "boolean" },
       "readOnly": { "type": "boolean" },
-      "checked": { "type": "boolean" }
+      "checked": { "type": "boolean" },
+      "llm": {
+        "type": "object",
+        "properties": {
+          "generate": { "type": "boolean" },
+          "promptKey": { "type": "string" },
+          "maxTokens": { "type": "integer", "minimum": 1 },
+          "fallbackValue": { "type": "string" },
+          "required": { "type": "boolean" },
+          "additionalContext": { "type": "object" }
+        }
+      },
+      "static": {
+        "type": "object",
+        "properties": {
+          "configKey": { "type": "string", "description": "Dot-notation path to value in unit-config.json" }
+        }
+      }
     }
   }
 }
