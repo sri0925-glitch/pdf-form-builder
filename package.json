@@ -10,10 +10,15 @@
     "inspect": "node add-fields.mjs inspect",
     "build": "node add-fields.mjs build",
     "extract": "node extract-previous.mjs",
-    "generate": "node generate-content.mjs"
+    "generate": "node generate-content.mjs",
+    "ees": "node ees-filler.mjs",
+    "measure": "node measure-coords.mjs",
+    "export-word": "node export-word.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
-    "pdf-lib": "^1.17.1"
+    "docx": "^9.5.1",
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.58.1"
   }
 }
