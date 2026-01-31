@@ -1,7 +1,7 @@
 ﻿import fs from "fs";
 import { PDFDocument } from "pdf-lib";
 
-const INPUT = "output_fillable.pdf";
+const INPUT = "Fillable_NCOER.pdf";
 const bytes = fs.readFileSync(INPUT);
 const pdfDoc = await PDFDocument.load(bytes);
 const form = pdfDoc.getForm();
